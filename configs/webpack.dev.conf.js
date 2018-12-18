@@ -20,7 +20,7 @@ const helper = require('./helper');
 
 /**
  * Modify the url that will open on the browser.
- * @param {Array} entry 
+ * @param {Array} entry
  */
 const postMessageToOpenPage =  (entry) => {
   let entrys = Object.keys(entry);
@@ -47,7 +47,7 @@ let wsTempServer = null
 
 /**
  * Generate multiple entrys
- * @param {Array} entry 
+ * @param {Array} entry
  */
 const generateHtmlWebpackPlugin = (entry) => {
   let entrys = Object.keys(entry);
@@ -95,7 +95,7 @@ const devWebpackConfig = webpackMerge(commonConfig[0], {
   plugins: [
     /**
      * Plugin: webpack.DefinePlugin
-     * Description: The DefinePlugin allows you to create global constants which can be configured at compile time. 
+     * Description: The DefinePlugin allows you to create global constants which can be configured at compile time.
      *
      * See: https://webpack.js.org/plugins/define-plugin/
      */

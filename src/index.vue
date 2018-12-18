@@ -1,40 +1,34 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo" />
+    <image
+      :src="logo"
+      class="logo"
+    />
     <text class="greeting">The environment is ready!</text>
-    <router-view/>
+    <router-view />
+    <footer></footer>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data () {
+  name: "App",
+  data() {
     return {
-      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
-    }
+      logo: "https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png"
+    };
   }
-}
+};
 </script>
 
-<style scoped>
-  .wrapper {
-    justify-content: center;
-    align-items: center;
-  }
-  .logo {
-    width: 424px;
-    height: 200px;
-  }
-  .greeting {
-    text-align: center;
-    margin-top: 70px;
-    font-size: 50px;
-    color: #41B883;
-  }
-  .message {
-    margin: 30px;
-    font-size: 32px;
-    color: #727272;
-  }
+<style lang="scss">
+@import "./style/common";
+.router-fade-enter-active,
+.router-fade-leave-active {
+  transition: opacity 0.3s;
+}
+.router-fade-enter,
+.router-fade-leave-active {
+  opacity: 0;
+}
 </style>

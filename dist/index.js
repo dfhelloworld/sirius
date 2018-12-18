@@ -92,20 +92,19 @@ var _vueRouter = __webpack_require__(2);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _HelloWorld = __webpack_require__(3);
+var _Home = __webpack_require__(3);
 
-var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
+var _Home2 = _interopRequireDefault(_Home);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/*global Vue*/
+/* global Vue */
 Vue.use(_vueRouter2.default);
-
 module.exports = new _vueRouter2.default({
   routes: [{
     path: '/',
-    name: 'HelloWorld',
-    component: _HelloWorld2.default
+    name: 'Home',
+    component: _Home2.default
   }]
 });
 
@@ -2755,7 +2754,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/Jeff_Deng/work/sirius/sirius-app/src/components/HelloWorld.vue"
+__vue_options__.__file = "D:\\work\\sirius\\src\\components\\Home.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -2809,10 +2808,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/Jeff_Deng/work/sirius/sirius-app/src/index.vue"
+__vue_options__.__file = "D:\\work\\sirius\\src\\index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2964abc9"
+__vue_options__._scopeId = "data-v-1a4d8e3c"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2831,27 +2830,27 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
-  "wrapper": {
-    "justifyContent": "center",
-    "alignItems": "center"
+  "@TRANSITION": {
+    "router-fade-enter-active": {
+      "property": "opacity",
+      "duration": 300
+    },
+    "router-fade-leave-active": {
+      "property": "opacity",
+      "duration": 300
+    }
   },
-  "logo": {
-    "width": "424",
-    "height": "200"
+  "router-fade-enter-active": {
+    "transitionProperty": "opacity",
+    "transitionDuration": 300
   },
-  "greeting": {
-    "textAlign": "center",
-    "marginTop": "70",
-    "fontSize": "50",
-    "color": "#41B883"
+  "router-fade-leave-active": {
+    "transitionProperty": "opacity",
+    "transitionDuration": 300,
+    "opacity": 0
   },
-  "message": {
-    "marginTop": "30",
-    "marginRight": "30",
-    "marginBottom": "30",
-    "marginLeft": "30",
-    "fontSize": "32",
-    "color": "#727272"
+  "router-fade-enter": {
+    "opacity": 0
   }
 }
 
@@ -2873,12 +2872,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
 
 exports.default = {
-  name: 'App',
+  name: "App",
   data: function data() {
     return {
-      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
+      logo: "https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png"
     };
   }
 };
@@ -2897,7 +2900,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('text', {
     staticClass: ["greeting"]
-  }, [_vm._v("The environment is ready!")]), _c('router-view')], 1)
+  }, [_vm._v("The environment is ready!")]), _c('router-view'), _c('footer')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

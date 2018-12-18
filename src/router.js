@@ -1,15 +1,14 @@
-/*global Vue*/
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+/* global Vue */
+import Router from 'vue-router';
+import Home from '@/components/Home';
 
-Vue.use(Router)
-
+Vue.use(Router);
 module.exports = new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
-})
+      name: 'Home',
+      component: Home,
+    },
+  ],
+});
